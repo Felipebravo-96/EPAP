@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./header.module.css"
 import { Link } from "react-router-dom";
+import NameLogo from "./NameLogo";
 
 function Header(){
     return(
         <div className={style.mainContainer}>
-            <div>
-                <Link to="/">
-                    <h1>LOGO</h1>
-                </Link>
+            <div className={style.namelogoContainer}>
+                <NameLogo/>
             </div>
             <div className={style.navbarContainer}>
                 <div>

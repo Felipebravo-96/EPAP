@@ -1,0 +1,72 @@
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoMenu{
+    display: flex;
+    margin: 0px 10px;
+}
+
+.menuMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuicon{
+    width: 70px;
+    height: 70px;
+    color: #3e6913;    
+}
+.menuButton{
+    background-color: #ffffff;
+    border: none;
+}
+.hojasimg{
+
+}
+.imgLogoContainer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.imgLogo{
+    width: 100%;
+}
+.hojas{
+    width: 100%;
+}
+.hojasimg{
+    width: 70%;
+}
+
+.navMobile{
+    list-style: none;
+}
+
+@media(min-width:40rem) {
+
+}
+
+@media(min-width:64rem) {
+    .mainContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    .menuMobile{
+        display: none;
+    }
+    
+    .hojasimg{
+        display: none;
+    }
+    .navMobile{
+        display: none;
+    }
+}
