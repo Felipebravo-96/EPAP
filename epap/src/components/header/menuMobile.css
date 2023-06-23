@@ -1,0 +1,24 @@
+.navMobileContainer{
+    width: 65%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    right: 0px;
+}
+.navMobileContainer.isActive{
+    display: flex; 
+    height: 50vh;
+    opacity: 1;
+    background-color: #0000ff;
+    position: absolute;
+    top: 92px;
+}

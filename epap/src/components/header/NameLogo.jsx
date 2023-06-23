@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./nameLogo.module.css"
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo-epap-img.png"
 import hojas from "../../assets/img/hojas.png"
 import { HiMenu } from "react-icons/hi";
+import "./menuMobile.css"
 
 function NameLogo(){
+
+    const [menu, setMenu] = useState(false)
+
+    const desplegarMenu = () =>{
+        setMenu(!menu)
+    }
+
     return(
         <div className={style.mainContainer}>
             <div className={style.logoMenu}>
@@ -18,11 +26,11 @@ function NameLogo(){
                     <img className={style.hojas} src ={hojas}  alt="EPAP"/>
                 </div>
                 <div className={style.menuMobile}>
-                    <button className={style.menuButton}>
-                     <HiMenu className={style.menuicon}/>
+                    <button onClick={desplegarMenu} className={style.menuButton}>
+                        <HiMenu className={style.menuicon}/>
                     </button>
                 </div>
-                <div className={style.navMobileContainer}>
+                <div className={`navMobileContainer ${menu ? "isActive" : ""}`}>
                     <ul className={style.navMobile}>
                         <li className={style.navMobileOption}>¿Quiénes somos?</li>
                         <li className={style.navMobileOption}>Biodiversidad</li>

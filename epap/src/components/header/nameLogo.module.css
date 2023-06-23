@@ -9,43 +9,54 @@
 .logoMenu{
     display: flex;
     margin: 0px 10px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .menuMobile{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 65px;
 }
 .menuicon{
     width: 70px;
     height: 70px;
-    color: #3e6913;    
+    color: #3e6913;
+    cursor: pointer;    
 }
 .menuButton{
     background-color: #ffffff;
     border: none;
 }
-.hojasimg{
 
-}
 .imgLogoContainer{
-    width: 25%;
+   
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 88px;
 }
 .imgLogo{
+    
     width: 100%;
+    
 }
 .hojas{
     width: 100%;
 }
 .hojasimg{
-    width: 70%;
+    width: 100%;
+    max-width: 200px;
+    z-index: 10;
 }
 
 .navMobile{
     list-style: none;
 }
+
+
 
 @media(min-width:40rem) {
 
