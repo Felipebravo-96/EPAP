@@ -32,19 +32,39 @@ function NameLogo(){
                 </div>
                 <div className={`navMobileContainer ${menu ? "isActive" : ""}`}>
                     <ul className={style.navMobile}>
-                        <li className={style.navMobileOption}>¿Quiénes somos?</li>
-                        <li className={style.navMobileOption}>Biodiversidad</li>
-                        <li className={style.navMobileOption}>Soberanía alimentaria</li>
-                        <li className={style.navMobileOption}>Arte</li>
-                        <li className={style.navMobileOption}>Repositorio</li>
+                        <li className={style.navMobileOption}>      
+                            <Link className={style.linkMobileMenu} to="/">
+                                <h1 className={style.optionTxtMenuMobile}>¿Quiénes somos?</h1>
+                            </Link>
+                        </li>
+                        <li className={style.navMobileOption}>
+                            <Link className={style.linkMobileMenu} to="/">
+                                <h1 className={style.optionTxtMenuMobile}>Biodiversidad</h1>
+                            </Link>
+                        </li>
+                        <li className={style.navMobileOption}>
+                            <Link className={style.linkMobileMenu} to="/">
+                                <h1 className={style.optionTxtMenuMobile}>Soberanía alimentaria</h1>
+                            </Link>
+                        </li>
+                        <li className={style.navMobileOption}>
+                            <Link className={style.linkMobileMenu} to="/">
+                                <h1 className={style.optionTxtMenuMobile}>Arte</h1>
+                            </Link>
+                        </li>
+                        <li className={style.navMobileOption}>
+                            <Link className={style.linkMobileMenu} to="/">
+                                <h1 className={style.optionTxtMenuMobile}>Repositorio</h1>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div className={style.navbarContainer}>
-                <div>
+            <div className={style.titleContainer}>
+                <div className={style.titleTxtContainer}>
                     ESCUELA DE PENSAMIENTO AMBIENTAL Y DE PAZ HUMEDAL EL CHARQUITO
                 </div>
-                <div>
+                <div className={style.descriptionTxtContainer}>
                     EDUCACIÓN AMBIENTAL COMUNITARIA
                 </div>
             </div>

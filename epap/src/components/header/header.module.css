@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 .navbarContainer{
-
+    display: none;
 }
 .namelogoContainer{
     width: 100%;
@@ -14,4 +14,16 @@
     justify-content: center;
     align-items: center;    
 }
- 
+
+
+
+@media(min-width:40rem) {
+
+}
+
+@media(min-width:64rem) {
+    .navbarContainer{
+        display: flex;
+    }
+
+}
